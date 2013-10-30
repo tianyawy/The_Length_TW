@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.After;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 /**
  * Length Tester.
  *
@@ -30,7 +31,17 @@ public class LengthTest {
         Length length1 = new Length(100, LengthUnit.M);
         Length length2 = new Length(100,LengthUnit.M);
 
+        Length length3 = new Length(1,LengthUnit.CM);
+        Length length4 = new Length(1,LengthUnit.CM);
+
+        Length length5 = new Length(1,LengthUnit.CM);
+        Length length6 = new Length(1,LengthUnit.CM);
+
+
         assertEquals("Exception Raised into should_equal_when_with_same_value()", length1, length2);
+        assertEquals("Exception Raised into should_equal_when_with_same_value()", length3, length4);
+        assertEquals("Exception Raised into should_equal_when_with_same_value()", length6, length5);
+        assertFalse("Exception Raised into should_equal_when_with_same_value()",length1.equals(length5));
     }
 
 

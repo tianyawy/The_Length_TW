@@ -8,5 +8,5 @@ package Model;
  * To change this template use File | Settings | File Templates.
  */
 public enum LengthUnit {
-    CM, M
+    CM, M, MM
 }
