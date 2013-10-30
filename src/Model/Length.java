@@ -13,6 +13,6 @@ public class Length {
     @Override
     public boolean equals(Object obj) {
         Length other = (Length) obj;
-        return (this.Value == other.Value) && (this.Unit == other.Unit);
+        return (this.Value == other.Value) && (this.Unit.equals(other.Unit));
     }
 }

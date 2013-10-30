@@ -28,14 +28,14 @@ public class LengthTest {
 
     @Test
     public void should_equal_when_with_same_value() throws Exception {
-        Length length1 = new Length(100, LengthUnit.M);
-        Length length2 = new Length(100,LengthUnit.M);
+        Length length1 = new Length(100, new LengthUnit("m",100));
+        Length length2 = new Length(100, new LengthUnit("m",100));
 
-        Length length3 = new Length(1,LengthUnit.CM);
-        Length length4 = new Length(1,LengthUnit.CM);
+        Length length3 = new Length(1, new LengthUnit("cm",1));
+        Length length4 = new Length(1, new LengthUnit("cm",1));
 
-        Length length5 = new Length(1,LengthUnit.CM);
-        Length length6 = new Length(1,LengthUnit.CM);
+        Length length5 = new Length(1, new LengthUnit("mm",0.1));
+        Length length6 = new Length(1,new LengthUnit("mm",0.1));
 
 
         assertEquals("Exception Raised into should_equal_when_with_same_value()", length1, length2);
