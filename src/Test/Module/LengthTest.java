@@ -1,6 +1,7 @@
 package Test.Module;
 
 import Model.Length;
+import Model.LengthUnit;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
@@ -26,11 +27,13 @@ public class LengthTest {
 
     @Test
     public void should_equal_when_with_same_value() throws Exception {
-        Length length1 = new Length(100);
-        Length length2 = new Length(100);
+        Length length1 = new Length(100, LengthUnit.M);
+        Length length2 = new Length(100,LengthUnit.M);
 
         assertEquals("Exception Raised into should_equal_when_with_same_value()", length1, length2);
     }
+
+
 
 
 } 
