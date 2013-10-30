@@ -2,37 +2,35 @@ package Test.Module;
 
 import Model.Length;
 import org.junit.Test;
-import org.junit.Before; 
+import org.junit.Before;
 import org.junit.After;
 
+import static org.junit.Assert.assertEquals;
+/**
+ * Length Tester.
+ *
+ * @author <Authors name>
+ * @version 1.0
+ * @since <pre>Oct 30, 2013</pre>
+ */
+public class LengthTest {
 
-/** 
-* Length Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>Oct 30, 2013</pre> 
-* @version 1.0 
-*/ 
-public class LengthTest { 
+    @Before
+    public void before() throws Exception {
+    }
 
-@Before
-public void before() throws Exception { 
-} 
+    @After
+    public void after() throws Exception {
+    }
 
-@After
-public void after() throws Exception { 
-} 
 
-/** 
-* 
-* Method: equals(Object obj) 
-* 
-*/ 
-@Test
-public void testEquals() throws Exception {
-    Length length1 = new Length(100);
-    Length length2 = new Length(100);
-} 
+    @Test
+    public void should_equal_when_with_same_value() throws Exception {
+        Length length1 = new Length(100);
+        Length length2 = new Length(100);
+
+        assertEquals("Exception Raised into should_equal_when_with_same_value()", length1, length2);
+    }
 
 
 } 
