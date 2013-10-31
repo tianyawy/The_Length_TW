@@ -13,6 +13,7 @@ public class LengthUnit {
     private final double _ConverRate;
 
     public LengthUnit(String unitname, double convertRate) {
+
         this._UnitName = unitname;
         this._ConverRate = convertRate;
             //To change body of created methods use File | Settings | File Templates.
