@@ -25,6 +25,6 @@ public class LengthUnit {
     }
 
     public double ConvertWith(LengthUnit targetUnit) {
-        return targetUnit._ConverRate/this._ConverRate;
+        return this._ConverRate/targetUnit._ConverRate;
     }
 }

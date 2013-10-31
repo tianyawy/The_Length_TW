@@ -45,6 +45,9 @@ public class LengthTest {
     }
 
 
-
+    public void should_get_100_rate_from_M_to_CM()throws Exception{
+        Length length1 = new Length(100, new LengthUnit("m",100));
+        assertEquals("should_get_100_rate_from_M_to_CM",100*100.0,length1.ConvertTo(new LengthUnit("mm",0.1)),0.0);
+    }
 
 } 

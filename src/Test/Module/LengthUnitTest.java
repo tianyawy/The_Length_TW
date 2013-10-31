@@ -18,6 +18,6 @@ public class LengthUnitTest {
     public void should_get_convert_from_m_to_mm(){
         LengthUnit unitM = new LengthUnit("m",100);
         LengthUnit unitMM = new LengthUnit("mm",0.1);
-        Assert.assertTrue(0.001 == unitM.ConvertWith(unitMM));
+        Assert.assertTrue(1000 == unitM.ConvertWith(unitMM));
     }
 }

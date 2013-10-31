@@ -15,4 +15,9 @@ public class Length {
         Length other = (Length) obj;
         return (this.Value == other.Value) && (this.Unit.equals(other.Unit));
     }
+
+    public double ConvertTo(LengthUnit toUnit) {
+        return 0;  //To change body of cre
+        // ated methods use File | Settings | File Templates.
+    }
 }
