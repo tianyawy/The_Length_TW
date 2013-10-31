@@ -21,6 +21,7 @@ public class Length {
     public Length ConvertTo(LengthUnit toUnit) {
         ///TODO: add convert rate ,add knowledge, encapsulation destroy
         ///TODO: convert function in unit,must be encapsulation
+        ///TODO: teacher said it's about knowledge points. less point more good
         double value = this.Value * this.Unit.ConvertWith(toUnit);
         Length toLength = new Length(value,toUnit);
         return toLength;
